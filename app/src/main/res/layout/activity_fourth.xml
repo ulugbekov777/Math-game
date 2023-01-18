@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="#DEFAF7"
-    tools:context=".ThirdActivity">
+    tools:context=".ui.ThirdActivity">
 
     <TextView
         android:id="@+id/number"

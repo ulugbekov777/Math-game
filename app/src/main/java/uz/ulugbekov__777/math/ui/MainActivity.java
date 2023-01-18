@@ -1,11 +1,12 @@
-package uz.ulugbekov__777.math;
+package uz.ulugbekov__777.math.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
+
+import uz.ulugbekov__777.math.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         cardView3.setOnClickListener(view -> {
-            Intent intent = new Intent(this, FifthActivity2.class);
+            Intent intent = new Intent(this, TwoPlayerActivity.class);
             startActivity(intent);
         });
     }

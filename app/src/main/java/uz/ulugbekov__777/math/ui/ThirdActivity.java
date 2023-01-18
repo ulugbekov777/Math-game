@@ -1,4 +1,4 @@
-package uz.ulugbekov__777.math;
+package uz.ulugbekov__777.math.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
-import android.os.ResultReceiver;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -16,17 +15,19 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import uz.ulugbekov__777.math.R;
 import uz.ulugbekov__777.math.databinding.ActivityThirdBinding;
+import uz.ulugbekov__777.math.models.QuestionModel;
 
-public class FourthActivity extends AppCompatActivity {
+public class ThirdActivity extends AppCompatActivity {
 
     ActivityThirdBinding binding;
     CountDownTimer countDownTimer;
     TextView question, answer, answer1, answer2, answer3, number;
     ArrayList<QuestionModel> questionModel = new ArrayList<>();
     int indexQuestion = 0;
-    static int rightAnswer = 0;
-    static int errorAnswer = 0;
+    public static int rightAnswer = 0;
+    public static int errorAnswer = 0;
     boolean isClicked = false;
 
     @SuppressLint("SetTextI18n")
@@ -144,7 +145,7 @@ public class FourthActivity extends AppCompatActivity {
             answer1.setText(questionModel.get(indexQuestion).getAnswer2());
             answer2.setText(questionModel.get(indexQuestion).getAnswer3());
             answer3.setText(questionModel.get(indexQuestion).getAnswer4());
-            number.setText((indexQuestion + 1) + " / 30");
+            number.setText((indexQuestion + 1) + " / 10");
 
             if (countDownTimer != null) {
                 countDownTimer.cancel();
@@ -170,7 +171,7 @@ public class FourthActivity extends AppCompatActivity {
             countDownTimer.start();
 
         } else {
-            startActivity(new Intent(FourthActivity.this, ResultActivy.class));
+            startActivity(new Intent(ThirdActivity.this, ResultActivy.class));
             finish();
         }
     }
@@ -184,36 +185,16 @@ public class FourthActivity extends AppCompatActivity {
     }
 
     private void loadQuestion() {
-        questionModel.add(new QuestionModel("3*5 = ?", "15", "25", "35", "45", "15"));
-        questionModel.add(new QuestionModel("8*9 = ?", "62", "72", "71", "74", "72"));
-        questionModel.add(new QuestionModel("5*7 = ?", "34", "30", "35", "45", "35"));
-        questionModel.add(new QuestionModel("4*9 = ?", "25", "34", "35", "36", "36"));
-        questionModel.add(new QuestionModel("7*8 = ?", "65", "56", "55", "25", "56"));
+        questionModel.add(new QuestionModel("5*9 = ?", "38", "45", "25", "55", "45"));
+        questionModel.add(new QuestionModel("4*3 = ?", "12", "33", "32", "15", "12"));
+        questionModel.add(new QuestionModel("6*4 = ?", "34", "24", "14", "25", "24"));
+        questionModel.add(new QuestionModel("3*9 = ?", "25", "28", "35", "27", "27"));
+        questionModel.add(new QuestionModel("5*8 = ?", "38", "40", "55", "25", "40"));
         questionModel.add(new QuestionModel("9*9 = ?", "80", "72", "81", "75", "81"));
         questionModel.add(new QuestionModel("5*2 = ?", "10", "35", "26", "12", "10"));
         questionModel.add(new QuestionModel("5*5 = ?", "45", "15", "65", "25", "25"));
         questionModel.add(new QuestionModel("7*8 = ?", "38", "56", "25", "55", "56"));
         questionModel.add(new QuestionModel("3*4 = ?", "12", "25", "22", "35", "12"));
-        questionModel.add(new QuestionModel("23*2 = ?", "56", "46", "35", "45", "56"));
-        questionModel.add(new QuestionModel("8*4 = ?", "43", "32", "63", "24", "32"));
-        questionModel.add(new QuestionModel("15*7 = ?", "92", "80", "105", "115", "105"));
-        questionModel.add(new QuestionModel("24*3 = ?", "72", "52", "85", "66", "72"));
-        questionModel.add(new QuestionModel("4*6 = ?", "24", "26", "35", "25", "24"));
-        questionModel.add(new QuestionModel("3*9 = ?", "27", "30", "42", "32", "27"));
-        questionModel.add(new QuestionModel("15*2 = ?", "10", "30", "26", "12", "30"));
-        questionModel.add(new QuestionModel("5*15 = ?", "45", "15", "65", "75", "75"));
-        questionModel.add(new QuestionModel("4*8 = ?", "32", "56", "35", "55", "32"));
-        questionModel.add(new QuestionModel("10*4 = ?", "52", "40", "32", "33", "40"));
-        questionModel.add(new QuestionModel("7*5 = ?", "35", "25", "15", "45", "35"));
-        questionModel.add(new QuestionModel("8*9 = ?", "62", "72", "71", "74", "72"));
-        questionModel.add(new QuestionModel("6*5 = ?", "30", "20", "39", "29", "30"));
-        questionModel.add(new QuestionModel("7*9 = ?", "56", "74", "63", "62", "63"));
-        questionModel.add(new QuestionModel("6*4 = ?", "24", "46", "34", "25", "24"));
-        questionModel.add(new QuestionModel("9*4 = ?", "55", "36", "41", "35", "36"));
-        questionModel.add(new QuestionModel("5*21 = ?", "105", "135", "115", "95", "105"));
-        questionModel.add(new QuestionModel("6*6 = ?", "45", "36", "26", "30", "36"));
-        questionModel.add(new QuestionModel("6*8 = ?", "38", "56", "48", "55", "48"));
-        questionModel.add(new QuestionModel("3*25 = ?", "62", "75", "42", "55", "75"));
     }
 
     private void initUI() {
@@ -241,5 +222,4 @@ public class FourthActivity extends AppCompatActivity {
         textView.setBackgroundColor(getResources().getColor(R.color.white));
         textView.setTextColor(getResources().getColor(R.color.black));
     }
-
 }

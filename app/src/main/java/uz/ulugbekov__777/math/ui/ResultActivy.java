@@ -1,9 +1,11 @@
-package uz.ulugbekov__777.math;
+package uz.ulugbekov__777.math.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import uz.ulugbekov__777.math.R;
 
 public class ResultActivy extends AppCompatActivity {
 

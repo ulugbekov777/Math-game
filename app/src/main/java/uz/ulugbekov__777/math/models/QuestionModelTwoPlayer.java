@@ -1,17 +1,25 @@
-package uz.ulugbekov__777.math;
+package uz.ulugbekov__777.math.models;
 
-public class QuestionModel {
+public class QuestionModelTwoPlayer {
     String question;
     String answer1;
     String answer2;
     String answer3;
-    String answer4;
     String realAnswer;
+
+    public QuestionModelTwoPlayer(String question, String answer1, String answer2, String answer3, String realAnswer) {
+        this.question = question;
+        this.answer1 = answer1;
+        this.answer2 = answer2;
+        this.answer3 = answer3;
+        this.realAnswer = realAnswer;
+    }
 
     public String getQuestion() {
         return question;
     }
-   public void setQuestion(String question) {
+
+    public void setQuestion(String question) {
         this.question = question;
     }
 
@@ -39,14 +47,6 @@ public class QuestionModel {
         this.answer3 = answer3;
     }
 
-    public String getAnswer4() {
-        return answer4;
-    }
-
-    public void setAnswer4(String answer4) {
-        this.answer4 = answer4;
-    }
-
     public String getRealAnswer() {
         return realAnswer;
     }
@@ -54,14 +54,4 @@ public class QuestionModel {
     public void setRealAnswer(String realAnswer) {
         this.realAnswer = realAnswer;
     }
-
-    public QuestionModel(String question, String answer1, String answer2, String answer3, String answer4, String realAnswer) {
-        this.question = question;
-        this.answer1 = answer1;
-        this.answer2 = answer2;
-        this.answer3 = answer3;
-        this.answer4 = answer4;
-       this.realAnswer = realAnswer;
-    }
 }
-

@@ -1,4 +1,4 @@
-package uz.ulugbekov__777.math;
+package uz.ulugbekov__777.math.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 

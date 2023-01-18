@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FifthActivity2">
+    tools:context=".ui.TwoPlayerActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,9 +27,10 @@
                 app:cardElevation="16dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/user1Answer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="45"
                     android:textColor="@color/black"
                     android:textSize="32sp" />
@@ -44,9 +45,10 @@
                 app:cardElevation="16dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/user1Answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="45"
                     android:textColor="@color/black"
                     android:textSize="32sp" />
@@ -61,9 +63,10 @@
                 app:cardElevation="16dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/user1Answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="45"
                     android:textColor="@color/black"
                     android:textSize="32sp" />
@@ -87,6 +90,7 @@
             app:cardElevation="16dp">
 
             <TextView
+                android:id="@+id/question1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -120,7 +124,7 @@
             app:cardElevation="16dp">
 
             <TextView
-                android:id="@+id/question"
+                android:id="@+id/question2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -147,16 +151,17 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
                 android:layout_margin="30dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="16dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/user2Answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="45"
                     android:textColor="@color/black"
                     android:textSize="32sp" />
@@ -171,9 +176,10 @@
                 app:cardElevation="16dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/user2Answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="45"
                     android:textColor="@color/black"
                     android:textSize="32sp" />
@@ -187,9 +193,10 @@
                 app:cardElevation="16dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/user2Answer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="45"
                     android:textColor="@color/black"
                     android:textSize="32sp" />
