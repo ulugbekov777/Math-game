@@ -185,11 +185,11 @@ public class TwoPlayerActivity extends AppCompatActivity {
         questionModel.add(new QuestionModelTwoPlayer("5*5 = ?", "34", "25", "14", "25"));
         questionModel.add(new QuestionModelTwoPlayer("6*4 = ?", "24", "28", "35", "24"));
         questionModel.add(new QuestionModelTwoPlayer("5*8 = ?", "38", "40", "55", "40"));
-        questionModel.add(new QuestionModelTwoPlayer("9*9 = ?", "80", "72", "81", "81"));
+        questionModel.add(new QuestionModelTwoPlayer("4*9 = ?", "36", "32", "26", "36"));
         questionModel.add(new QuestionModelTwoPlayer("5*2 = ?", "10", "35", "26", "10"));
-        questionModel.add(new QuestionModelTwoPlayer("5*5 = ?", "45", "25", "65", "25"));
+        questionModel.add(new QuestionModelTwoPlayer("7*5 = ?", "45", "25", "35", "35"));
         questionModel.add(new QuestionModelTwoPlayer("7*8 = ?", "38", "56", "25", "56"));
-        questionModel.add(new QuestionModelTwoPlayer("3*4 = ?", "12", "25", "22", "12"));
+        questionModel.add(new QuestionModelTwoPlayer("8*4 = ?", "32", "45", "22", "12"));
     }
 
     private void setUI(int indexQuestion) {
